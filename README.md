@@ -1,2 +1,2 @@
 # HTML-and-CSS-Projects-
-Projects form HTML and CSS course 
+Projects from HTML and CSS course 
