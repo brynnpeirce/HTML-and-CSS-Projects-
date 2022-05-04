@@ -1,0 +1,13 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65%;
+}
+
+body {
+    font-size:14px;
+    margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height:normal;
+    border:4px double;
+    border-radius:4px;
+}
