@@ -2,173 +2,111 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="CSS/one_page_website.css">
-		<title> Hathaway Hidaway | Wedding Venue </title>
+		<script src="JS/one-page-website.js"></script>
+		<title> Peirce photography | Newborn Photography </title>
 	</head>
 		<body>
 			<!-- Navigation-->
 			<nav> 
 				<a href="#home"> Home | </a>
 				<a href="#gallery"> Gallery | </a>
-				<a href="#ourstory"> Our Story | </a>
-				<a href="#reservations"> Reservations </a>
+				<a href="#reservations"> Contact </a>
 			</nav>
 			<!--End Navigation-->
 			
 			<!--Home page -->
 				<div id="home">
-					<h3> Hathaway Hidaway </h3>
+					<h3> Peirce Photography </h3>
 				</div>
 			<!-- END home page -->
 			
 			<!--GALLERY-->
-		<section>
-			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
-				
-					<!--PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_1.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+			<div id="gallery" class="row">
+				<div class="column">
+					<img src="images/thumb/baby1.jpg" onclick="openModal();currentSlide(1)"
+						class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumb/baby2.jpg" onclick="openModal();currentSlide(2)"
+						class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumb/baby3.jpg" onclick="openModal();currentSlide(3)"
+						class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="images/thumb/baby4.jpg" onclick="openModal();currentSlide(4)"
+						class="hover-shadow">
+				</div>
+			</div>
+
+			<!--The Modal/Lightbox-->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="images/thumb/baby1.jpg" style="width:100%">
 					</div>
-					<!--END PHOTO-CONTAINER 1 -->
-					
-					<!--PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_2.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="images/thumb/baby2.jpg" style="width:100%">
 					</div>
-					<!--END PHOTO-CONTAINER 2-->
-					
-					<!--PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_3.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/thumb/baby3.jpg" style="width:100%">
 					</div>
-					<!--END PHOTO-CONTAINER 3 -->
-					
-					<!--PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_4.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="images/thumb/baby4.jpg" style="width:100%">
 					</div>
-					<!--END PHOTO-CONTAINER 4 -->
+
+					<!--Next/Previous buttons-->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 					
-					<!--PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_5.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+					<!--Caption text-->
+					<div class="caption-container">
+						<p id="caption"></p>
 					</div>
-					<!--END PHOTO-CONTAINER 5 -->
-					
-					<!--PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_6.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+
+					<!--Thumbnail image controls-->
+					<div class="column">
+						<img class="demo" src="images/thumb/baby1.jpg" onclick="currentSlide(1)"
+						alt="Book a session today">
 					</div>
-					<!--END PHOTO-CONTAINER 6 -->
-					
-					<!--PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_7.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+
+					<div class="column">
+						<img class="demo" src="images/thumb/baby2.jpg" onclick="currentSlide(2)"
+						alt="Book a session today">
 					</div>
-					<!--END PHOTO-CONTAINER 7 -->
-					
-					<!--PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_8.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
+
+					<div class="column">
+						<img class="demo" src="images/thumb/baby3.jpg" onclick="currentSlide(3)"
+						alt="book a session today">
 					</div>
-					<!--END PHOTO-CONTAINER 8 -->
-					
-					<!--PHOTO-CONTAINER 9 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_9.png" alt="image not avaliable">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your wedding today!</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 9 -->
-					
-					
+
+					<div class="column">
+						<img class="demo" src="images/thumb/baby4.jpg" onclick="currentSlide(4)"
+						alt="book a session today">
 					</div>
 				</div>
-			</section>
-			<!--END GALLERY -->
-			
-			<!--Our Story-->
-			<div id="ourstory"
-				<h1> Our Story </h1>
-						<section>
-							<h3> See Hathaway Hidaways first wedding </h3>
-								<div>
-									<p> The owner, Jeff Jackson, bought this piece of property for his family
-									in 2015. Him and his family started preparing it to build their future home, 
-									a beautiful 5 acres to retire on. When Jeffs first daughter got engaged, she 
-									asked if the property could be used for their big day. He of course said yes
-									and Hathawya Hidaway was born! 
-									</p>
-								</div>
-									<div>
-										<p> Check out Hathaway Hidaways first wedding! </p>
-											<iframe src="https://player.vimeo.com/video/236803286?h=4540a95647" width="640" height="360" frameborder="0" 
-											allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-											<p><a href="https://vimeo.com/236803286">McKenna &amp; Gavin</a> from <a href="https://vimeo.com/user52656633">
-											Shearer Photo Video</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-									</div>
 			</div>
-						</section>				
-					
-			<!--END our story-->
+
 			
-			<!--Reservations-->
+		
+			<!--END GALLERY -->
+						
+					
+			
+			<!--Contact-->
 				<section>
-					<div id="reservations"
-					<h1> Reservations</h1>
+					<div id="reservations">
+						</h1> Contact </h1>
 						<h3>Questions? Send us an email!</h3>
 							<form action="" method="post">
 									<input class="rsvp" type="text" value="First Name">
@@ -183,7 +121,7 @@
 			
 			<!--Footer-->
 				<footer>
-					<p> www.hathawayhidaway.com | &copy 2022
+					<p> www.PeircePhotography.com | &copy 2022
 				</footer>
 			
 				
